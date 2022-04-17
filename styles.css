@@ -10,7 +10,7 @@ html {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url("mohammad-rahmani-q1p2DrLBtko-unsplash.jpg");
+        url("mohammad-rahmani-q1p2DrLBtko-unsplash (1).jpg");
 
     /* Set a specific height */
     height: 100%;
@@ -99,7 +99,7 @@ html {
 .content {
     /* height: 100%; */
     font-size: 36px;
-    background-image: url("marcel-strauss-lRIMRLE9SOk-unsplash.jpg");
+    background-image: url("marcel-strauss-lRIMRLE9SOk-unsplash (1).jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
