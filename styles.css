@@ -8,9 +8,9 @@ html {
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)),
-        url("mohammad-rahmani-q1p2DrLBtko-unsplash (1).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.7)),
+        url("mohammad-rahmani-q1p2DrLBtko-unsplash (1)-min (5).jpg");
 
     /* Set a specific height */
     height: 100%;
@@ -99,7 +99,9 @@ html {
 .content {
     /* height: 100%; */
     font-size: 36px;
-    background-image: url("marcel-strauss-lRIMRLE9SOk-unsplash (1).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("marcel-strauss-lRIMRLE9SOk-unsplash (1)-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +118,7 @@ html {
     font-size: 20px;
 }
 
-.content .about-me h3{
+.content .about-me h3 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -148,15 +150,15 @@ html {
     align-items: center;
 }
 
-.card .languages{
+.card .languages {
     grid-area: languages
 }
 
-.card .frameworks{
+.card .frameworks {
     grid-area: frameworks;
 }
 
-.card .other{
+.card .other {
     grid-area: other;
 }
 
@@ -168,25 +170,25 @@ html {
     margin-top: 0;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     /* grid-template-columns: auto auto auto; */
     /* background-color: #2196F3; */
     padding: 10px;
     justify-items: center;
-    grid-template-areas: 
+    grid-template-areas:
         "languages frameworks other"
     ;
 }
 
 @media screen and (max-width: 800px) {
-    .grid-container{
+    .grid-container {
         /* grid-template-areas: 
         "languages languages languages"
         "frameworks frameworks frameworks"
         "other other other" */
         grid-template-areas: none;
-    ;
+        ;
     }
 
     .card {
@@ -196,13 +198,13 @@ html {
 }
 
 @media screen and (min-height: 1085px) {
-    .grid-container{
+    .grid-container {
         /* grid-template-areas: 
         "languages languages languages"
         "frameworks frameworks frameworks"
         "other other other" */
         grid-template-areas: none;
-    ;
+        ;
     }
 
     .card {
@@ -215,24 +217,26 @@ hr {
     width: 25rem;
 }
 
-@media screen and (max-width: 475px){
-    hr{
+@media screen and (max-width: 475px) {
+    hr {
         width: 70%;
-    };
+    }
 
-    .card{
+    ;
+
+    .card {
         width: 5vh;
     }
 
-    .grid-container{
+    .grid-container {
         padding: 0;
     }
 
-    .content .about-me p{
+    .content .about-me p {
         font-size: 90%;
-    } 
+    }
 
-    .content .about-me{
+    .content .about-me {
         font-size: 50%;
         margin: 5;
     }

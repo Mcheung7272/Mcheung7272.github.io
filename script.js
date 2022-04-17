@@ -1,6 +1,6 @@
-// window.onscroll = function (e) {
-//     parallax();
-// };
+window.onscroll = function (e) {
+    parallax();
+};
 
 function parallax() {
     let scrolled = $(window).scrollTop();
