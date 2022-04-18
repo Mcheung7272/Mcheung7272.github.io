@@ -118,7 +118,7 @@ html {
     font-size: 36px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url("marcel-strauss-lRIMRLE9SOk-unsplash (1)-min.jpg");
+        url("marcel-strauss-lRIMRLE9SOk-unsplash-min.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,8 +126,8 @@ html {
 }
 
 .content .about-me {
-    margin: 0 100px 50px 100px;
-    padding-top: 100px;
+    margin: 0 100px 40px 100px;
+    padding-top: 20px;
     max-width: 600px;
 }
 
@@ -189,8 +189,6 @@ html {
 
 .grid-container {
     display: grid;
-    /* grid-template-columns: auto auto auto; */
-    /* background-color: #2196F3; */
     padding: 10px;
     justify-items: center;
     grid-template-areas:
@@ -200,10 +198,6 @@ html {
 
 @media screen and (max-width: 800px) {
     .grid-container {
-        /* grid-template-areas: 
-        "languages languages languages"
-        "frameworks frameworks frameworks"
-        "other other other" */
         grid-template-areas: none;
         ;
     }
@@ -216,10 +210,6 @@ html {
 
 @media screen and (min-height: 1085px) {
     .grid-container {
-        /* grid-template-areas: 
-        "languages languages languages"
-        "frameworks frameworks frameworks"
-        "other other other" */
         grid-template-areas: none;
         ;
     }
@@ -238,7 +228,6 @@ hr {
     hr {
         width: 70%;
     }
-
     ;
 
     .card {
@@ -270,6 +259,5 @@ a.icon-block {
 a.icon-block i,
 a.icon-block span {
     display: block;
-    /* width: 100%; */
     clear: both;
 }

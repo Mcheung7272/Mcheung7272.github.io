@@ -1,31 +1,3 @@
-// window.onscroll = function (e) {
-//     parallax();
-// };
-
-// function parallax() {
-//     let scrolled = $(window).scrollTop();
-//     let h1Opacity = 1 - (scrolled / 270);
-//     let pOpacity = 1 - (scrolled / 390);
-//     let bOpacity = 1 - (scrolled / 410);
-//     let arrowOpacity = 1 - (scrolled / 450);
-//     if (h1Opacity > 0) {
-//         $('.hero-text h1').css('opacity', h1Opacity);
-//     }
-
-//     if (pOpacity > 0) {
-//         $('.hero-text p').css('opacity', pOpacity);
-//     }
-
-//     if (bOpacity > 0) {
-//         $('.hero-text button').css('opacity', bOpacity);
-//     }
-
-//     if (arrowOpacity > 0) {
-//         $('.wrap .arrow').css('opacity', arrowOpacity);
-//     }
-
-// };
-
 $(window).scroll(function () {
     var scrollTop = $(this).scrollTop();
 
