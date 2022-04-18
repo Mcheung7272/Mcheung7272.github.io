@@ -155,13 +155,14 @@ html {
 }
 
 .content .about-me {
-    margin: 0 100px 40px 100px;
+    margin: 0 50px 40px 50px;
     padding-top: 20px;
     max-width: 600px;
 }
 
 .content .about-me p {
-    font-size: 20px;
+    font-size: 14pt;
+    /* text-align: justify; */
 }
 
 .content .about-me h3 {
@@ -224,6 +225,7 @@ html {
         margin: 10px;
         width: 40vh;
     }
+    
 }
 
 @media screen and (min-height: 1085px) {
@@ -241,11 +243,6 @@ hr {
     /* .card {
         width: 5vh;
     } */
-
-    .content .about-me p {
-        font-size: 90%;
-    }
-
     .content .about-me {
         font-size: 50%;
         margin: 5;
