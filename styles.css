@@ -219,21 +219,7 @@ html {
     text-decoration: underline;
 }
 
-.grid-container {
-    display: grid;
-    padding: 10px;
-    justify-items: center;
-    grid-template-areas:
-        "languages frameworks other"
-    ;
-}
-
 @media screen and (max-width: 800px) {
-    .grid-container {
-        grid-template-areas: none;
-        ;
-    }
-
     .card {
         margin: 10px;
         width: 40vh;
@@ -241,11 +227,6 @@ html {
 }
 
 @media screen and (min-height: 1085px) {
-    .grid-container {
-        grid-template-areas: none;
-        ;
-    }
-
     .card {
         margin: 10px;
         width: 40vh;
@@ -257,19 +238,9 @@ hr {
 }
 
 @media screen and (max-width: 475px) {
-    hr {
-        width: 70%;
-    }
-
-    ;
-
-    .card {
+    /* .card {
         width: 5vh;
-    }
-
-    .grid-container {
-        padding: 0;
-    }
+    } */
 
     .content .about-me p {
         font-size: 90%;
