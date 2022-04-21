@@ -299,6 +299,8 @@ html {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     font-size: 1em;
+    -webkit-perspective: 1800px;
+    perspective: 1800px;
 }
 
 .card:hover .content {
@@ -310,6 +312,8 @@ html {
     -o-transition: transform 1.5s;
     transition: transform 1.5s;
     transition: transform 1.5s, -webkit-transform 1.5s;
+    -webkit-perspective: 1800px;
+    perspective: 1800px;
 }
 
 .front,
@@ -332,8 +336,8 @@ html {
     width: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform: translateZ(1px);
-            transform: translateZ(1px);
+    -webkit-perspective: 1800px;
+    perspective: 1800px;
 
 }
 
