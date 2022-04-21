@@ -260,8 +260,8 @@ html {
     background: #05151f;
     color: white;
     /* background: transparent; */
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
     /* transform: translateZ(1px); */
 }
 
