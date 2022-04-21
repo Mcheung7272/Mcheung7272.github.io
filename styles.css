@@ -299,8 +299,6 @@ html {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     font-size: 1em;
-    -webkit-perspective: 1800px;
-    perspective: 1800px;
 }
 
 .card:hover .content {
@@ -312,8 +310,6 @@ html {
     -o-transition: transform 1.5s;
     transition: transform 1.5s;
     transition: transform 1.5s, -webkit-transform 1.5s;
-    -webkit-perspective: 1800px;
-    perspective: 1800px;
 }
 
 .front,
@@ -334,19 +330,21 @@ html {
     position: absolute;
     height: 100%;
     width: 100%;
+}
+
+.front{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-perspective: 1800px;
-    perspective: 1800px;
-
 }
 
 .back {
     background: #05151f;
     color: white;
     /* background: transparent; */
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .card-image{
