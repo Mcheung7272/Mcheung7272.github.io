@@ -312,10 +312,6 @@ html {
     transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
-.card:hover .front{
-    z-index: 0;
-}
-
 .front,
 .back {
     display: -webkit-box;
@@ -334,14 +330,6 @@ html {
     position: absolute;
     height: 100%;
     width: 100%;
-}
-
-.front{
-    z-index: 1;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    transition: z-index 1.2s;
-
 }
 
 .back {
