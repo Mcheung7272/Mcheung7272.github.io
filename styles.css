@@ -218,6 +218,8 @@ html {
     border-radius: 5px;
     /* font-size: 0.6em; */
     opacity: 0.6;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
 }
 
 .content {
