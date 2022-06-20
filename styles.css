@@ -384,9 +384,9 @@ html {
     }
 } */
 
-hr {
+/* hr {
     width: 25rem;
-}
+} */
 
 @media screen and (max-width: 475px) {
 
@@ -401,7 +401,7 @@ hr {
 
 a.icon-block {
     display: inline-block;
-    width: 7rem;
+    /* width: 7rem; */
     text-align: center;
     text-decoration: none;
     color: inherit;
