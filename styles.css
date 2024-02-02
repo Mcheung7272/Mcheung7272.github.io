@@ -351,7 +351,7 @@ html {
 }
 
 .card-description{
-    font-size: 1rem; 
+    font-size: 90%; 
     margin-left: 15px;
     margin-right: 15px;
 }
