@@ -5,6 +5,8 @@
 * Browsers: last 4 version
 */
 
+* {-webkit-font-smoothing: antialiased;}
+
 body,
 html {
     height: 100%;
