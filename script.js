@@ -1,32 +1,42 @@
-$(window).scroll(function () {
-    var scrollTop = $(this).scrollTop();
+// ─── Theme ───────────────────────────────────────────────────
+const html = document.documentElement;
+const toggleBtn = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
 
-    $('.hero-text').css({
-        opacity: function () {
-            var elementHeight = $(this).height(),
-                opacity = ((elementHeight - scrollTop) / elementHeight);
-            return opacity;
-        }
-    });
+// Default is dark; only apply light if explicitly stored
+const saved = localStorage.getItem('theme');
+if (saved === 'light') {
+    html.setAttribute('data-theme', 'light');
+    themeIcon.className = 'fa-solid fa-moon';
+}
 
-    $('.wrap').css({
-        opacity: function () {
-            var elementHeight = $(this).height(),
-                opacity = ((elementHeight - scrollTop) / elementHeight);
-            return opacity;
-        }
-    });
+toggleBtn.addEventListener('click', () => {
+    const isLight = html.getAttribute('data-theme') === 'light';
+    if (isLight) {
+        html.removeAttribute('data-theme');
+        themeIcon.className = 'fa-solid fa-sun';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        html.setAttribute('data-theme', 'light');
+        themeIcon.className = 'fa-solid fa-moon';
+        localStorage.setItem('theme', 'light');
+    }
 });
 
-function arrowOnClick() {
-    // if (window.screen.availWidth > 800 && window.screen.availHeight > 1880) {
-    //     $("html, body").animate({ scrollTop: $(document).height() - $(window).height() }, 2000);
-    // } else {
-    //     $('html, body').animate({
-    //         scrollTop: $("#about").offset().top
-    //     }, 2000);
-    // }
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 300);
+// ─── Nav shadow on scroll ────────────────────────────────────
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+}, { passive: true });
+
+// ─── Hero parallax fade ──────────────────────────────────────
+const heroContent = document.querySelector('.hero-content');
+if (heroContent) {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        const heroHeight = document.querySelector('.hero').offsetHeight;
+        const progress = scrolled / (heroHeight * 0.5);
+        heroContent.style.opacity = Math.max(0, 1 - progress);
+        heroContent.style.transform = `translateY(${scrolled * 0.12}px)`;
+    }, { passive: true });
 }

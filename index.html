@@ -3,412 +3,252 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Matthew Cheung | Portfolio</title>
+    <title>Matthew Cheung</title>
     <link rel="icon" type="image/x-icon" href="m.ico">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <script src="https://kit.fontawesome.com/f53fd7bc03.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Playfair+Display&display=swap"
-        rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/f53fd7bc03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-
 
 <body>
 
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Matthew Cheung</h1>
-            <p class="job-title">Software Developer</p>
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+        <a class="nav-name" href="#hero">MC</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-sun" id="themeIcon"></i>
+            </button>
         </div>
-        <div class="wrap">
-            <a onclick="arrowOnClick()">
-                <div class="arrow"></div>
-            </a>
-        </div>
-    </div>
+    </nav>
 
-    <div id="content" class="content">
-        <div class="about-me" id="about">
-            <h3>About Me:</h3>
-            <p>Software Engineer based out of McLean VA. <br/><br/>
-                
-                I enjoy fishing, gaming and spending time with my girlfriend and dogs. <br/> <br/>
-                Below are personal & company projects I worked on during my time in 
-                <a style="text-decoration: none; color: inherit; font-weight: 600;" target="_blank"
-                    href="https://www.albany.edu/">college</a>, tenure at 
-                <a style="text-decoration: none; color: inherit; font-weight: 600;" target="_blank"
-                    href="https://www.jahnelgroup.com/">Jahnel Group</a>, and currently within 
-                <a style="text-decoration: none; color: inherit; font-weight: 600;" target="_blank"
-                    href="https://www.capitalone.com/">Capital One</a>.
-            </p>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Hi, I'm</p>
+            <h1>Matthew<br>Cheung</h1>
+            <p class="hero-subtitle">Software Developer</p>
+            <a href="#about" class="hero-cta">View my work &darr;</a>
         </div>
+    </section>
 
+    <!-- About -->
+    <section id="about" class="section about-section">
         <div class="container">
-
-            <div class="row" style="margin-bottom: 10px;">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="content">
-                            <div class="front">
-                                <p>Commercial Bank Lifecycle & Process Service</p>
-                                <img class="card-image" src="/assets/images/process.svg" alt="Truck" />
-                            </div>
-                            <div class="back">
-                                <h5>Description</h5>
-                                <span class="card-description">Currently building a lifecycle & process service to help facilitate the 
-                                    creation of different processes, track their stateful changes and event out necessary information across
-                                    different platforms. This will be used throughout Capital One Commercial Banking.
-                                </span>
-                                <h5>Built with</h5>
-                                <div class="row gx-5">
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-typescript-plain colored"></i>
-                                                <span>Typescript</span>
-                                            </div>
-
-                                            <div>
-                                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                                <span>HTML</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-css3-plain-wordmark colored"></i>
-                                                <span>CSS</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-angularjs-plain colored"></i>
-                                                <span>Angular</span><br />
-                                            </div>
-                                            <div>
-                                                <i class="devicon-go-plain colored"></i>
-                                                <span>Go</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-jenkins-plain colored"></i>
-                                                <span>Jenkins</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <span>Capital One</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="content">
-                            <div class="front">
-                                <p>Work Order Management System</p>
-                                <img class="card-image" src="assets/images/workflow.svg" />
-                            </div>
-                            <div class="back">
-                                <h5>Description</h5>
-                                <span class="card-description"> Developed the UI for a
-                                    Content Management System for a large media company. This UI will be used
-                                    by stakeholders in different regions. The app is a complete redesign of their
-                                    current tool and aims to automate / manage
-                                    all work orders.
-                                </span>
-                                <h5>Built with</h5>
-                                <div class="row gx-5">
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-typescript-plain colored"></i>
-                                                <span>Typescript</span>
-                                            </div>
-
-                                            <div>
-                                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                                <span>HTML</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-css3-plain-wordmark colored"></i>
-                                                <span>CSS</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-angularjs-plain colored"></i>
-                                                <span>Angular</span><br />
-                                            </div>
-                                            <div>
-                                                <i class="devicon-jest-plain colored"></i>
-                                                <span>Jest</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-jenkins-plain colored"></i>
-                                                <span>Jenkins</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <span>Jahnel Group</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="content">
-                            <div class="front">
-                                <p>Dashboard for Mental Health App</p>
-                                <img class="card-image" src="/assets/images/mental.svg" alt="brain" />
-                            </div>
-                            <div class="back">
-                                <h5>Description</h5>
-                                <span class="card-description">Built an admin dashboard for a mental
-                                    health application. The dashboard
-                                    needed custom authentication, ability to grant/remove roles and send out emails to
-                                    new customers managed by the admin group.
-                                </span>
-                                <h5>Built with</h5>
-                                <div class="row gx-5">
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-javascript-plain colored"></i>
-                                                <span>Javascript</span><br />
-                                            </div>
-
-                                            <div>
-                                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                                <span>HTML</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-css3-plain-wordmark colored"></i>
-                                                <span>CSS</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-react-original colored"></i>
-                                                <span>React</span><br />
-                                            </div>
-                                            <div>
-                                                <i class="devicon-materialui-plain colored"></i>
-                                                <span>Material UI</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-express-original-wordmark"></i>
-                                                <span>Express</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <span>Jahnel Group</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="content">
-                            <div class="front">
-                                <p>Shipping Company Metrics Tracker</p>
-                                <img class="card-image" src="/assets/images/truck.svg" alt="Truck" />
-                            </div>
-                            <div class="back">
-                                <h5>Description</h5>
-                                <span class="card-description">Developed the UI for a third party
-                                    Amazon shipping company. The company received a PDF every week of all their drivers
-                                    and driving metrics. We compiled these and displayed all the metrics in an easy,
-                                    digestible manner.
-                                    The company saw an increase in performance immediately after release.
-                                </span>
-                                <h5>Built with</h5>
-                                <div class="row gx-5">
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-javascript-plain colored"></i>
-                                                <span>Javascript</span><br />
-                                            </div>
-
-                                            <div>
-                                                <i class="devicon-html5-plain-wordmark colored"></i>
-                                                <span>HTML</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-css3-plain-wordmark colored"></i>
-                                                <span>CSS</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-react-original colored"></i>
-                                                <span>React</span><br />
-                                            </div>
-                                            <div>
-                                                <i class="devicon-materialui-plain colored"></i>
-                                                <span>Material UI</span>
-                                            </div>
-                                            <div>
-
-                                                <i class="devicon-flask-original-wordmark"></i>
-                                                <span>Flask</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <span>Jahnel Group</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="content">
-                            <div class="front">
-                                <p>UAlbany Course Lookup</p>
-                                <img class="card-image" src="/assets/images/graduation-ceremony.svg" />
-                            </div>
-                            <div class="back">
-                                <h5>Description</h5>
-                                <span class="card-description">
-                                    Web Scraper for the UAlbany Course site for an easier look up on
-                                    all / relevant courses. Scrapes the site every semester for new course information
-                                    and stored on a SQLite database for fast lookup. Displays the information in a very
-                                    convenient and intuitive manner.
-                                </span>
-                                <h5>Built with</h5>
-                                <div class="row gx-5">
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-python-plain-wordmark colored"></i>
-                                                <span>Python</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-discordjs-plain"></i>
-                                                <span>Discord API</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-raspberrypi-line colored"></i>
-                                                <span>Raspberry Pi</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-selenium-original"></i>
-                                                <span>Selenium</span><br />
-                                            </div>
-                                            <div>
-                                                <i class="devicon-sqlite-plain"></i>
-                                                <span>SqLite</span><br />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <span>Personal Project</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="content">
-                            <div class="front">
-                                <p>Rate My Professor Bot</p>
-                                <img class="card-image" src="/assets/images/rating.svg" alt="Rate My Professor Logo" />
-                            </div>
-                            <div class="back">
-                                <h5>Description</h5>
-                                <span class="card-description">
-                                    Developed this bot to help students research and compare which professors to take.
-                                    This bot is capable of being set for any university in the US and displays all the
-                                    available
-                                    information you would normally get from the website.
-                                </span>
-                                <h5>Built with</h5>
-                                <div class="row gx-5">
-                                    <div class="col-sm d-flex justify-content-center">
-                                        <div class="technology-container">
-                                            <div>
-                                                <i class="devicon-python-plain-wordmark colored"></i>
-                                                <span>Python</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-discordjs-plain"></i>
-                                                <span>Discord API</span>
-                                            </div>
-                                            <div>
-                                                <i class="devicon-raspberrypi-line colored"></i>
-                                                <span>Raspberry Pi</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <span>Personal Project</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container custom-footer">
-                <div class="row">
-                    <div class="col-3">
-                        <a href="https://github.com/Mcheung7272" target="_blank" class="icon-block">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://www.linkedin.com/in/iam-matthew-cheung/" target="_blank" class="icon-block">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="mailto: mcheung7272@gmail.com" class="icon-block">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="assets/resume/Matthew Cheung Resume 2026.pdf" download class="icon-block">
-                            <i class="fa-solid fa-file"></i>
-                        </a>
-                    </div>
-
-                </div>
+            <p class="section-label">About</p>
+            <div class="about-body">
+                <p class="about-text">
+                    Software Engineer based out of McLean, VA. I enjoy fishing, gaming, and spending time with my girlfriend and dogs.
+                </p>
+                <p class="about-text">
+                    Below are projects I worked on during my time in
+                    <a href="https://www.albany.edu/" target="_blank">college</a>, at
+                    <a href="https://www.jahnelgroup.com/" target="_blank">Jahnel Group</a>, and currently within
+                    <a href="https://www.capitalone.com/" target="_blank">Capital One</a>.
+                </p>
             </div>
         </div>
-</body>
+    </section>
 
+    <!-- Projects -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <p class="section-label">Projects</p>
+            <div class="cards-grid">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="/assets/images/process.svg" alt="" />
+                            <p>Process Management Platform</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-top">
+                                <span class="card-company">Capital One</span>
+                                <p>Currently focused on building a multi-tenant Process Management Platform. Working heavily with AWS Serverless and XState to orchestrate complex, event-driven business processes modeled as state machines.</p>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-label">Built with</span>
+                                <div class="tech-icons">
+                                    <div><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                                    <div><i class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+                                    <div><i class="devicon-xstate-plain colored"></i><span>XState</span></div>
+                                    <div><i class="devicon-jenkins-plain colored"></i><span>Jenkins</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="assets/images/workflow.svg" alt="" />
+                            <p>Work Order Management System</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-top">
+                                <span class="card-company">Jahnel Group</span>
+                                <p>Developed the UI for a Content Management System for a large media company.
+                                    A complete redesign of their current tool, aimed at automating and managing
+                                    all work orders across regions.</p>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-label">Built with</span>
+                                <div class="tech-icons">
+                                    <div><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                                    <div><i class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+                                    <div><i class="devicon-jest-plain colored"></i><span>Jest</span></div>
+                                    <div><i class="devicon-jenkins-plain colored"></i><span>Jenkins</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="/assets/images/mental.svg" alt="" />
+                            <p>Dashboard for Mental Health App</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-top">
+                                <span class="card-company">Jahnel Group</span>
+                                <p>Built an admin dashboard for a mental health application with custom
+                                    authentication, role management, and the ability to send emails to new
+                                    customers managed by the admin group.</p>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-label">Built with</span>
+                                <div class="tech-icons">
+                                    <div><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                                    <div><i class="devicon-react-original colored"></i><span>React</span></div>
+                                    <div><i class="devicon-materialui-plain colored"></i><span>Material UI</span></div>
+                                    <div><i class="devicon-express-original-wordmark"></i><span>Express</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="/assets/images/truck.svg" alt="" />
+                            <p>Shipping Company Metrics Tracker</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-top">
+                                <span class="card-company">Jahnel Group</span>
+                                <p>Developed the UI for a third-party Amazon shipping company. Compiled weekly
+                                    PDF metrics for all drivers and displayed them in an easy, digestible manner.
+                                    The company saw an immediate performance increase post-release.</p>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-label">Built with</span>
+                                <div class="tech-icons">
+                                    <div><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                                    <div><i class="devicon-react-original colored"></i><span>React</span></div>
+                                    <div><i class="devicon-materialui-plain colored"></i><span>Material UI</span></div>
+                                    <div><i class="devicon-flask-original-wordmark"></i><span>Flask</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="/assets/images/graduation-ceremony.svg" alt="" />
+                            <p>UAlbany Course Lookup</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-top">
+                                <span class="card-company">Personal Project</span>
+                                <p>Web scraper for the UAlbany course site for easier lookup. Scrapes each
+                                    semester for new course info, stores it in a SQLite database for fast
+                                    lookup, and surfaces it through a Discord bot.</p>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-label">Built with</span>
+                                <div class="tech-icons">
+                                    <div><i class="devicon-python-plain-wordmark colored"></i><span>Python</span></div>
+                                    <div><i class="devicon-discordjs-plain"></i><span>Discord API</span></div>
+                                    <div><i class="devicon-sqlite-plain"></i><span>SQLite</span></div>
+                                    <div><i class="devicon-raspberrypi-line colored"></i><span>Raspberry Pi</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="/assets/images/rating.svg" alt="" />
+                            <p>Rate My Professor Bot</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-back-top">
+                                <span class="card-company">Personal Project</span>
+                                <p>Developed this bot to help students research and compare professors.
+                                    Can be configured for any US university and surfaces all the information
+                                    normally available on the Rate My Professor website.</p>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-label">Built with</span>
+                                <div class="tech-icons">
+                                    <div><i class="devicon-python-plain-wordmark colored"></i><span>Python</span></div>
+                                    <div><i class="devicon-discordjs-plain"></i><span>Discord API</span></div>
+                                    <div><i class="devicon-raspberrypi-line colored"></i><span>Raspberry Pi</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p class="section-label">Contact</p>
+            <p class="footer-tagline">Let's connect.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Mcheung7272" target="_blank" title="GitHub">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/iam-matthew-cheung/" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:mcheung7272@gmail.com" title="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="assets/resume/Matthew Cheung Resume 2026.pdf" download title="Resume">
+                    <i class="fa-solid fa-file"></i>
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Matthew Cheung</p>
+        </div>
+    </footer>
+
+</body>
 </html>
